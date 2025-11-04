@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ray & Rebeca">
+    <meta name="description" content="Proyecto Final del Curso de Desarrollo Web">
+    <meta name="keywords" content="Desarrollo Web, Proyecto Final, Ray, Rebeca">
+    <!-- Css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Proyecto Final - Ray & Rebeca</title>
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay"></div>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">
+              <svg width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 15.7807C40 24.4962 31.0457 22.8821 20 22.8821C8.9543 22.8821 0 24.4962 0 15.7807C0 7.06528 8.9543 0 20 0C31.0457 0 40 7.06528 40 15.7807Z" fill="#FF8E2B"/>
+                <rect x="2" y="26" width="36" height="12" rx="6" fill="#FF8E2B"/>
+                </svg>
+            <span class="logo-text">Mercadito N.L.</span>
+        </a>
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#" class="nav-link active">Inicio</a></li>
+            <li><a href="companies.html" class="nav-link highlight">Emprendimientos</a></li>
+            <li><a href="products.html" class="nav-link highlight">Productos</a></li>
+            <li><a href="#" class="cta-button">Mi carrito</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seccion productos (Estatica) -->
+
+    <div class="products-page">
+        <div class="page-header">
+            <h1 class="page-title">Descubre Productos <span class="highlight">Únicos</span></h1>
+            <p class="page-description">
+                Dale un vistazo a nuestro extenso catálogo de productos de toda categoría de nuestro estado
+            </p>
+            <input type="text" class="search-bar" placeholder="Buscar Negocio o Producto...">
+        </div>
+
+        <div class="products-container">
+            <!-- Sidebar de Filtros -->
+            <aside class="filters-sidebar">
+                <h3 class="filters-title">Filtros</h3>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Categorías</h4>
+                    <div class="filter-option">
+                        <span class="filter-checkbox">Comida</span>
+                        <div class="filter-count"></div>
+                    </div>
+                    <div class="filter-option">
+                        <span class="filter-checkbox">Bebidas</span>
+                        <div class="filter-count"></div>
+                    </div>
+                    <div class="filter-option">
+                        <span class="filter-checkbox">Postres</span>
+                        <div class="filter-count"></div>
+                    </div>
+                    <div class="filter-option">
+                        <span class="filter-checkbox">Textiles</span>
+                        <div class="filter-count"></div>
+                    </div>
+                    <div class="filter-option">
+                        <span class="filter-checkbox">Joyería</span>
+                        <div class="filter-count"></div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-group-title">Rango de Precio</h4>
+                    <input type="range" class="range-slider" min="0" max="1000" value="500">
+                    <div style="display: flex; justify-content: space-between; margin-top: 0.5rem; font-size: 0.85rem; color: #999;">
+                        <span>$0</span>
+                        <span>$1000</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Grid de Productos -->
+            <div class="products-content">
+                <div class="products-header">
+                    <span class="products-count">24 productos encontrados</span>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 8 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 9 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 10 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 11 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 12 -->
+                    <div class="product-card">
+                        <div class="product-image">🍽️</div>
+                        <div class="product-info">
+                            <div class="product-category">Comida</div>
+                            <h3 class="product-name">Bolsa de Beef Jerjey</h3>
+                            <div class="product-footer">
+                                <span class="product-price">$880</span>
+                                <button class="add-to-cart-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more">
+                    <button class="btn-load-more">Cargar Más Productos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+<!-- Footer -->
+  <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="assets/logoNL.svg" alt="Mercadito N.L. Logo" class="logo-icon" style="background: none;">                    
+                 <div class="footer-info">
+                    <h2>¿ No Encuentras lo que buscas?</h2>
+
+                    <p>Contáctanos y te ayudamos a buscar el producto. O ven a nuestras Expo-Mercaditos</p>
+                    
+                    <button class="cta-button">
+                        Contáctanos
+                    </button>
+                
+                </div>
+                
+                </div>
+
+               
+                
+            </div>
+
+
+    
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
