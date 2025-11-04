@@ -13,12 +13,11 @@ body {
 
 .gradient-body {
     background: linear-gradient(
-        180deg, 
-        #FDE6DB 0%,      /* Inicio */
-        #FEF2EB 50%,     /* Punto medio opcional */
-        #FEF8F4 100%     /* Final */
+        155deg,
+        #FFCCB3 0%,      /* Inicio */
+        #FEF8F4 20%     /* Punto medio opcional */
     );
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 /* NAVBAR */
