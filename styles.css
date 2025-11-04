@@ -11,6 +11,16 @@ body {
     background: #f9f9f9;
 }
 
+.gradient-body {
+    background: linear-gradient(
+        180deg, 
+        #FDE6DB 0%,      /* Inicio */
+        #FEF2EB 50%,     /* Punto medio opcional */
+        #FEF8F4 100%     /* Final */
+    );
+    min-height: 80vh;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -200,12 +210,36 @@ body {
     color: #666;
     line-height: 1.6;
     max-width: 500px;
+    margin: 11px;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+}
+
+/* Business Catalogue Hero Section */
+.catalog-hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.catalog-hero-content{
+    min-height: 50vh;
+}
+
+.centered-subtitle {
+    color: rgb(102, 102, 102);;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin:30px;
+    width: 100%;
 }
 
 /* BUTTONS */
@@ -724,14 +758,11 @@ background: rgba(255, 192, 136, 0.11);
 .logo-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #FF9A56 0%, #FF7B3D 100%);
-    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-
 
 .footer-links {
     display: flex;

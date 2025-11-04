@@ -10,9 +10,9 @@
     <!-- Css -->
     <link rel="stylesheet" href="styles.css">
 
-    <title>Catalogo Emprendimientos - Mercadito N.L.</title>
+    <title>Proyecto Final - Ray & Rebeca</title>
 </head>
-<body>
+<body class="gradient-body">
 
   <div class="overlay" id="overlay"></div>
     
@@ -32,74 +32,33 @@
         </button>
 
         <ul class="nav-menu" id="navMenu">
-            <li><a href="#" class="nav-link active">Inicio</a></li>
-            <li><a href="companies.html" class="nav-link highlight">Emprendimientos</a></li>
+            <li><a href="index.html" class="nav-link highlight">Inicio</a></li>
+            <li><a href="#" class="nav-link active">Emprendimientos</a></li>
             <li><a href="#" class="nav-link highlight">Productos</a></li>
             <li><a href="#" class="cta-button">Mi carrito</a></li>
         </ul>
     </nav>
 
-
-    <!-- Primera Seccion -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-badge">Apoya a Nuevo Leon</p>
-                <h1 class="hero-title">
-                    Descubre <span class="highlight">Talento Local</span>
-                </h1>
-                <p class="hero-description">
-                    Conecta con emprendedores de Nuevo Leon y encuentra productos únicos hechos con pasión y dedicación
-                </p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Explorar Productos</a>
-                    <a href="#" class="btn btn-secondary">Conocer Negocios</a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <div class="image-placeholder"></div>
-                
-                <div class="floating-card card-1">
-                    <div class="card-icon">👨‍🍳</div>
-                    <span class="card-text">500+ Emprendedores</span>
-                </div>
-                
-                <div class="floating-card card-2">
-                    <div class="card-icon">⭐</div>
-                    <span class="card-text">Calidad Garantizada</span>
-                </div>
-            </div>
+    <!-- Primera Seccion: Titulo -->
+    <section class="catalog-hero" >
+        <div class="catalog-hero-content">
+            <h1 class="hero-title">Emprendimientos que Inspiran</h1>
+            <p class="centered-subtitle">
+                Conoce a los creadores de los tesoros de Nuevo León que brindan calidad, tradición y pasión en cada proyecto
+            </p>
+            <a href="#empresas" class="btn btn-primary">250+ Empresas Asociadas</a>
         </div>
     </section>
 
-    <!-- Seccion business -->
-
+    <!-- Seccion Comida y sus Business "Cards" -->
     <section class="business-section">
 
+        <div class="section-header">
+            <h2 class="section-title">Comida</h2>
+        </div>
         <hr style="margin-bottom: 50px; height: 3px; background-color: #000; border: none; border-radius: 5px;">
 
-        <div class="section-header">
-            <h2 class="section-title">Apoya Negocios Locales</h2>
-            <p class="section-description">
-                Conoce a los emprendedores que hacen de Nuevo León un lugar único
-            </p>
-            <a href="#" class="badge">25+ negocios asociados</a>
-        </div>
-
         <div class="cards-grid">
-            <div class="business-card">
-                <div class="card-image">🍽️</div>
-                <h3 class="card-title">Somos Sabores</h3>
-                <p class="card-description">
-                    Un emprendimiento nacido en CDMX que busca volver naturales los productos procesados que todos amamos
-                </p>
-                <div class="card-footer">
-                    <span class="product-count">18 productos</span>
-                    <a href="#" class="card-link">Ver Mas</a>
-                </div>
-            </div>
-
             <div class="business-card">
                 <div class="card-image">🍽️</div>
                 <h3 class="card-title">Somos Sabores</h3>
@@ -130,50 +89,81 @@
         </div>
     </section>
 
-    <!-- Seccion categorias -->
+    <!-- Seccion Categoría Textiles -->
+    <section class="business-section">
 
-    <section class="categories-section">
         <div class="section-header">
-            <h2 class="section-title">Explora por Categoría</h2>
-            <p class="section-description">
-                Encuentra lo que buscas en nuestro catálogo de productos producidor por la mejor mano nuevoleonensa
-            </p>
+            <h2 class="section-title">Textiles</h2>
         </div>
+        <hr style="margin-bottom: 50px; height: 3px; background-color: #000; border: none; border-radius: 5px;">
 
-        <div class="categories-grid">
-            <div class="category-card">
-                <div class="category-icon"></div>
-                <h3 class="category-name">Comida</h3>
+        <div class="cards-grid">
+            <div class="business-card">
+                <div class="card-image">👜</div>
+                <h3 class="card-title">Somos Sabores</h3>
+                <p class="card-description">
+                    Un emprendimiento nacido en CDMX que busca volver naturales los productos procesados que todos amamos
+                </p>
+                <div class="card-footer">
+                    <span class="product-count">18 productos</span>
+                    <a href="#" class="card-link">Ver Mas</a>
+                </div>
             </div>
 
-            <div class="category-card">
-                <div class="category-icon"></div>
-                <h3 class="category-name">Sazonadores y Complementos</h3>
-            </div>
-
-            <div class="category-card">
-                <div class="category-icon"></div>
-                <h3 class="category-name">Bebidas</h3>
-            </div>
-
-            <div class="category-card">
-                <div class="category-icon"></div>
-                <h3 class="category-name">Joyería</h3>
-            </div>
-
-            <div class="category-card">
-                <div class="category-icon"></div>
-                <h3 class="category-name">Textiles</h3>
-            </div>
-
-            <div class="category-card">
-                <div class="category-icon"></div>
-                <h3 class="category-name">Postres</h3>
+            <div class="business-card">
+                <div class="card-image">👜</div>
+                <h3 class="card-title">Somos Sabores</h3>
+                <p class="card-description">
+                    Un emprendimiento nacido en CDMX que busca volver naturales los productos procesados que todos amamos
+                </p>
+                <div class="card-footer">
+                    <span class="product-count">18 productos</span>
+                    <a href="#" class="card-link">Ver Mas</a>
+                </div>
             </div>
         </div>
 
-        <div class="view-catalog-container">
-            <a href="#" class="btn-view-catalog">Explora Catálogo Completo</a>
+        <div class="view-all-container">
+            <a href="#" class="btn-view-all">Ver Todos los Negocios</a>
+        </div>
+    </section>
+
+    <!-- Seccion Categoría Bebidas -->
+    <section class="business-section">
+
+        <div class="section-header">
+            <h2 class="section-title">Bebidas</h2>
+        </div>
+        <hr style="margin-bottom: 50px; height: 3px; background-color: #000; border: none; border-radius: 5px;">
+
+        <div class="cards-grid">
+            <div class="business-card">
+                <div class="card-image">☕</div>
+                <h3 class="card-title">Somos Sabores</h3>
+                <p class="card-description">
+                    Un emprendimiento nacido en CDMX que busca volver naturales los productos procesados que todos amamos
+                </p>
+                <div class="card-footer">
+                    <span class="product-count">18 productos</span>
+                    <a href="#" class="card-link">Ver Mas</a>
+                </div>
+            </div>
+
+            <div class="business-card">
+                <div class="card-image">☕</div>
+                <h3 class="card-title">Somos Sabores</h3>
+                <p class="card-description">
+                    Un emprendimiento nacido en CDMX que busca volver naturales los productos procesados que todos amamos
+                </p>
+                <div class="card-footer">
+                    <span class="product-count">18 productos</span>
+                    <a href="#" class="card-link">Ver Mas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-all-container">
+            <a href="#" class="btn-view-all">Ver Todos los Negocios</a>
         </div>
     </section>
 
